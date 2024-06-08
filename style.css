@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: roboto;
+}
+
+.card1{
+
+    font-weight: 500;
+    padding: 5%;
+    background-color: rgb(193, 189, 189);
+
+}
