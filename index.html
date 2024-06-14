@@ -3,97 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>Iron-Man</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 </head>
 <body>
-    
-    <div style="display: flex; ">
-        
-        <div style="display: flex; justify-content: center; align-items: center; position: relative;">
-            <!-- for image -->
-            <img src="image.png" style="height: 100vh; object-fit: cover;">
-
-            <div class = "tag">IRON-MAN</div>
-
+    <div style="display: flex; padding: none;">
+        <div class="image-container">
+            <img src="image.png" class="poster">
         </div>
-
-        <div style="display: flex; flex-direction: column; ">
-            <!-- for right side -->
-
-            <div class = "card1"><p>
-                Make your dream come come true by buying your own IRON-MAN suit !!! We have all selections from Mark-1 upto Mark-50
-            </p>
-        </div>
-
-        <div classs = "card2" style="display: flex;flex-direction: column; gap: 8px; padding-left: 5%; padding-bottom: 5%;padding-right:5%;box-shadow: rgba(0, 0, 0, 1) 0px 28px 50px, rgba(0, 0, 0, 1) 0px 20px 20px;">
-        
-            <p>Let's get started !</p>
-
-            <div style="display: flex; justify-content:space-between;">
-
-                <div style="width: 30%;">
-                    <label>First name:</label>
-                    <input type="text">
-                </div>
-
-                <div style="width: 30%;">
-                    <label>Last name:</label>
-                    <input type="text">
-                </div>
-
+        <div style="display: flex; flex-direction: column;">
+            <div class="card1">
+                <p style="font-weight: 700; text-align: center;">Buy Now!</p>
+                <p>
+                    Bring your own Iron Man suit to your home all the way from Mark-1 to Mark-50. We only have a limited amount of suits left, so hurry up! Prices start from 2 Billion USD.
+                </p>
             </div>
-
-            <div style="display: flex; justify-content:space-between;">
-
-                <div style="width: 30%;">
-                    <label>Email:</label>
-                    <input type="text">
+            <div class="card2">
+                <div class="row">
+                    <div>
+                        <label>Full Name:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Last Name:</label>
+                        <input type="text">
+                    </div>
                 </div>
-
-                <div style="width: 30%;">
-                    <label>Phone:</label>
-                    <input type="text">
+                <div class="row">
+                    <div>
+                        <label>Email:</label>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <label>Phone:</label>
+                        <input type="text">
+                    </div>
                 </div>
-
-                
+                <div class="row">
+                    <div>
+                        <label>Password:</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <label>Confirm Password:</label>
+                        <input type="password" id="confirmPassword" name="confirmPassword" required>
+                    </div>
+                </div>
             </div>
-            
-            <div style="display: flex; justify-content:space-between;">
-
-                <div style="width: 30%;">
-                    <label>Password:</label>
-                    <input type="text">
-                </div>
-                
-                <div style="width: 30%;">
-                    <label>Confirm Password:</label>
-                    <input type="text">
-                </div>
-                
+            <div class="card3">
+                <button type="button" onclick="validatePasswords()">Create Account</button>
+                Already have an account? <a href="#">Login</a>
             </div>
-        
         </div>
-            
-        
-        <div style="width: 100%;height: 100%; padding-left: 5%; padding-top: 15px; background-color: rgb(220, 219, 219);
-        ">
-
-            <button>
-                Create Account
-            </button>
-
-            <p>Already have an account ? <a href="#">Log in</a></p>
-
-        </div>
-
-        </div>
-
     </div>
-
-
+    <script src="script.js"></script>
 </body>
 </html>
